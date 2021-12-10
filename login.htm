@@ -1,0 +1,181 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login-Nasure</title>   
+    <link rel="icon" type="image/png" href="C:\Users\Balakrishanan\Desktop\DBMS End sem project\leaf logo.png">  
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300;1,400;1,500;1,600&display=swap');
+        body{  
+            margin: 0;  
+            padding: 0;    
+            font-family: zilla slab,serif;  
+        }  
+        .login{  
+            position:absolute;
+            width: 382px;  
+            overflow: hidden;  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding:80px;
+            background: grey; 
+            top:15%; 
+            left:30%;
+        } 
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        } 
+        h2{  
+            position:absolute;
+            text-align: center;  
+            color: white;
+            text-shadow: 5px 5px 5px grey;
+            font-size: 50px;  
+            padding: 20px;
+            font-family: zilla slab,serif;
+            text-transform: uppercase; 
+            top:-4%;
+            left:37%;
+        }  
+        h2:after {
+            display:block;
+            content: '';
+            border-bottom: solid 5px white; 
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+        }
+        h2:hover:after { 
+            transform: scaleX(1); 
+            text-shadow:5px 5px grey;
+        }
+        label{  
+            color:white;
+            text-shadow:1px 1px 1px black;  
+            font-size: 32px;
+            font-family:zilla slab,serif;  
+        }  
+        #Uname{  
+            width: 300px;  
+            height: 30px;  
+            border: 5px solid #1abc9c;  
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 3px;  
+            padding-left: 10px;  
+        }  
+        #Pass{  
+            width: 300px;  
+            height: 30px;  
+            border: 5px solid #1abc9c; 
+            font-size: 15px;
+            font-weight: 600; 
+            border-radius: 3px;  
+            padding-left: 10px;  
+        }  
+        #log{  
+            width: 100px;  
+            height: 35px;
+            position: absolute;
+            left: 40%;  
+            border: none;  
+            border-radius: 17px;  
+            padding-left: 10px;  
+            color:black;
+            font-size: 15px; 
+            font-style: bold;
+            font-weight: 600;
+            background-color:white; 
+        } 
+        #log:hover{
+            background-color:#1abc9c;
+            color:black;
+        } 
+        span{  
+            color: white;  
+            font-size: 17px; 
+            transform:translateX(10px); 
+        }  
+        #psw{
+            display: block;
+            float: right;
+            color:white;
+            text-shadow:1px 1px black;
+            font-size:25;
+        }
+        #psw a{
+            color:white;
+            text-shadow:1px 1px black;
+            font-size:25;
+        }
+        #signup p{
+            position:absolute;
+            color:white;
+            text-shadow:5px 5px 5px grey;
+            font-size:50px;
+            left:26%;
+            top:87%;
+        }
+        .sign {
+            position:absolute;
+            color:black;
+            text-shadow:4px 4px 5px grey;
+            font-size:50px;
+            left:59%;
+            top:87%;
+        }
+        .sign p:after {
+                display:block;
+                content: '';
+                border-bottom: solid 5px white; 
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+            }
+        .sign p:hover:after { 
+                transform: scaleX(1); 
+                text-shadow:5px 5px grey;
+            }
+    </style>  
+</head>    
+<body>  
+    <div id=slidebg></div>
+    <video autoplay muted loop id="myVideo">
+        <source src="filtered-3A5A8F26-D155-4383-A29C-6A9DEA4B64EC.MP4" type="video/MP4">
+    </video>     
+    <h2>Login Page</h2><br> 
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>
+        <br>
+        <br>    
+        <input type="text" spellcheck="false" name="Uname" id="Uname" placeholder="Username">    
+        <br>
+        <br>
+        <br>    
+        <label><b>Password </b>    
+        </label> 
+        <br>
+        <br>   
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br>
+        <br> 
+        <br>   
+        <input type="submit" name="log" id="log" value="Log In">       
+        <br>
+        <br>  
+        <br>  
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        <span id="psw">Forgot <a href="#">Password?</a></span>  
+    </form>     
+</div>
+<div id=signup>
+    <p>NEW TO OUR FAM?!...</p>
+    <a href="C:\Users\Balakrishanan\Desktop\DBMS End sem project\signup.htm" class=sign><p>SIGNUP</p></a>    
+</body>    
+</html>   
